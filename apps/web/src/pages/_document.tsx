@@ -36,11 +36,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Young+Serif&display=swap"
           rel="stylesheet"
         />
-        <title>Briefer</title>
+        <title>Mapa do Bosque</title>
         <script src="/env.js" />
       </Head>
       <body>
-        <title>Briefer</title>
+        <title>Mapa do Bosque</title>
         <Main />
         <NextScript />
       </body>

@@ -414,7 +414,7 @@ export default function Layout({
             <div className="flex items-center justify-between pt-0.5 pl-4 pr-5">
               <div className="font-trap tracking-tight text-2xl antialiased text-gray-800 flex items-center gap-x-1 scale-90">
                 <SparklesIcon className="h-4 w-4" />
-                <span className="leading-4 mt-1">briefer</span>
+                <span className="leading-4 mt-1">Mapa do Bosque</span>
               </div>
 
               <div className="mt-2.5 scale-90 flex items-center">

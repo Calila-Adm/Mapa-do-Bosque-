@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.9
 
 WORKDIR /usr/src/app
 
@@ -17,7 +17,7 @@ RUN apt-get update && \
         gdal-bin \
         libgdal-dev \
         curl \
-        libaio1 \
+        libaio1t64 \
         alien \
         && rm -rf /var/lib/apt/lists/*
 

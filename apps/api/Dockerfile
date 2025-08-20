@@ -42,7 +42,7 @@ COPY turbo.json turbo.json
 # ARG TURBO_TOKEN
 # ENV TURBO_TOKEN=$TURBO_TOKEN
 
-RUN yarn turbo run build --filter=@briefer/api...
+RUN yarn turbo run build --filter=@briefer/database && yarn turbo run build --filter=@briefer/types && yarn turbo run build --filter=@briefer/editor && yarn turbo run build --filter=@briefer/api
 
 FROM base AS runner
 WORKDIR /app
