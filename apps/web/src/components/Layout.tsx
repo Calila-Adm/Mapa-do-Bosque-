@@ -45,7 +45,6 @@ import useSideBar, {
 import MobileWarning from './MobileWarning'
 import CommandPalette from './commandPalette'
 import { useHotkeys } from 'react-hotkeys-hook'
-import GitHubButton from 'react-github-btn'
 import { useDataSources } from '@/hooks/useDatasources'
 import {
   ConfigurationsMenuButton,
@@ -411,22 +410,10 @@ export default function Layout({
               transition: 'width 0.2s ease-in-out',
             }}
           >
-            <div className="flex items-center justify-between pt-0.5 pl-4 pr-5">
-              <div className="font-trap tracking-tight text-2xl antialiased text-gray-800 flex items-center gap-x-1 scale-90">
+            <div className="flex items-center justify-between pt-6 pl-10 pr-6">
+              <div className="font-trap tracking-tight text-2xl antialiased text-gray-800 flex items-center gap-x-1 scale-110">
                 <SparklesIcon className="h-4 w-4" />
                 <span className="leading-4 mt-1">Mapa do Bosque</span>
-              </div>
-
-              <div className="mt-2.5 scale-90 flex items-center">
-                <GitHubButton
-                  href="https://github.com/briefercloud/briefer"
-                  data-color-scheme="no-preference: light; light: light; dark: dark;"
-                  data-size="large"
-                  data-show-count="true"
-                  aria-label="Star briefercloud/briefer on GitHub"
-                >
-                  Star
-                </GitHubButton>
               </div>
             </div>
 

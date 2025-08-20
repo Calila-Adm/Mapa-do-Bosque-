@@ -54,7 +54,7 @@ export default function DashboardPage() {
   return (
     <>
       <Head>
-        <title>{document.title || 'Untitled'} - Briefer</title>
+        <title>{document.title || 'Untitled'} - Mapa do Bosque</title>
       </Head>
 
       <Dashboard

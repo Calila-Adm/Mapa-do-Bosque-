@@ -60,7 +60,7 @@ function Notebook(props: Props) {
   return (
     <>
       <Head>
-        <title>{document.title || 'Untitled'} - Briefer</title>
+        <title>{document.title || 'Untitled'} - Mapa do Bosque</title>
       </Head>
       <PrivateDocumentPage
         key={props.documentId}
