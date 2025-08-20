@@ -136,21 +136,16 @@ function ScheduleConfigForm({
             <div className="flex items-center justify-between pt-2">
               <h4 className="pt-0.5">Notifications</h4>
               <div className="flex items-center justify-end gap-x-2">
-                <Tooltip
-                  title="Notifications are not available in the open-source version"
-                  message="Upgrade to Briefer cloud’s professional tier to use it."
-                  active={true}
-                  position="left"
-                  tooltipClassname="w-48"
-                >
                   <button
                     type="button"
-                    className="flex items-center gap-x-2 rounded-sm px-2.5 py-1 text-gray-500 text-sm hover:bg-gray-100 border border-gray-200 disabled:cursor-not-allowed"
-                    disabled
+                    className="flex items-center gap-x-2 rounded-sm px-2.5 py-1 text-gray-500 text-sm hover:bg-gray-100 border border-gray-200"
+                    onClick={() => {
+                      // Aqui você pode implementar a lógica de adicionar notificação
+                      console.log('Add notification clicked')
+                    }}
                   >
                     Add
                   </button>
-                </Tooltip>
               </div>
             </div>
           </div>

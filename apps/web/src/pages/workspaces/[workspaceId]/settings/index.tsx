@@ -194,12 +194,6 @@ export default function SettingsPage() {
                   <div className="w-1/2 flex items-center justify-center">
                     <Switch.Group as="div">
                       <div className="mt-2">
-                        <Tooltip
-                          title="Allow anyone from domain to join is not available in the open-source version"
-                          message="Upgrade to Briefer cloud’s professional tier to use this."
-                          tooltipClassname="w-72 text-center"
-                          active
-                        >
                           <Switch
                             checked={false}
                             onChange={() => {}}
@@ -207,7 +201,6 @@ export default function SettingsPage() {
                               'bg-gray-200',
                               'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:cursor-not-allowed'
                             )}
-                            disabled
                           >
                             <span
                               aria-hidden="true"
@@ -217,7 +210,6 @@ export default function SettingsPage() {
                               )}
                             />
                           </Switch>
-                        </Tooltip>
                       </div>
                     </Switch.Group>
                   </div>
@@ -240,13 +232,7 @@ export default function SettingsPage() {
                   </span>
                 </div>
 
-                <Tooltip
-                  title="Different assistant models are not available in the open-source version"
-                  message="Upgrade to Briefer cloud’s professional tier to have access to them."
-                  tooltipClassname="w-72 text-center"
-                  active
-                  className="w-1/2 flex items-center justify-center"
-                >
+                <div className="w-1/2 flex items-center justify-center">
                   <select
                     id="assistant_model"
                     name="assistant_model"
@@ -258,11 +244,10 @@ export default function SettingsPage() {
                         assistantModel: e.target.value,
                       })
                     }}
-                    disabled
                   >
                     <option value="gpt-4o">GPT-4o (Recommended)</option>
                   </select>
-                </Tooltip>
+                </div>
               </div>
             </div>
 

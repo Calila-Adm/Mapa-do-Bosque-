@@ -92,20 +92,15 @@ export default function IntegrationsNewPage() {
             </h3>
           </div>
           <ul role="list" className="divide-y divide-gray-100 pt-6">
-            <Tooltip
-              title="The Slack integration is not available in the open-source version"
-              message="Upgrade to Briefer cloud’s professional tier to use it."
-              className="flex w-full"
-              active={true}
-            >
               <IntegrationBlock
                 name="Slack"
                 description="Send reports or error notifications to a Slack channel. The Slack integration works with scheduled runs."
                 icon="/icons/slack.png"
-                onClick={() => {}}
-                disabled
+                onClick={() => {
+                  // Aqui você pode implementar a lógica de integração Slack
+                  console.log('Slack integration clicked')
+                }}
               />
-            </Tooltip>
           </ul>
         </div>
       </div>

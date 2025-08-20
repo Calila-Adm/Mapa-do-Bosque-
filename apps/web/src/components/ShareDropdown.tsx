@@ -85,14 +85,7 @@ export default function ShareDropdown(props: Props) {
                       Make public
                     </Switch.Label>
 
-                    <Tooltip
-                      title="Public documents are not available in the open-source version"
-                      message="Upgrade to Briefer cloud’s professional tier to use them."
-                      className="flex"
-                      tooltipClassname="w-72 text-center"
-                      position="bottom"
-                      active
-                    >
+                    <div className="flex">
                       <Switch
                         checked={props.isPublic}
                         onChange={props.onTogglePublic ?? (() => {})}
@@ -100,7 +93,6 @@ export default function ShareDropdown(props: Props) {
                           props.isPublic ? 'bg-primary-500' : 'bg-gray-200',
                           'relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none disabled:cursor-not-allowed'
                         )}
-                        disabled
                       >
                         <span
                           aria-hidden="true"
@@ -110,7 +102,7 @@ export default function ShareDropdown(props: Props) {
                           )}
                         />
                       </Switch>
-                    </Tooltip>
+                    </div>
                   </Switch.Group>
                   <p className="text-xs text-gray-500">
                     Public documents are available to anyone with the link, but
@@ -139,23 +131,13 @@ export default function ShareDropdown(props: Props) {
               </button>
             )}
           </Menu.Item>
-          <Tooltip
-            title="PDF exports are not available in the open-source version"
-            message="Upgrade to Briefer cloud’s professional tier to use them."
-            className="flex"
-            tooltipClassname="w-72 text-center"
-            position="bottom"
-            active
-          >
             <Menu.Item>
               {({ active }) => (
                 <button
                   className={clsx(
-                    'cursor-not-allowed',
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'flex items-center justify-between w-full text-sm px-4 py-3'
                   )}
-                  disabled
                 >
                   <div className="flex gap-x-2 items-center">
                     <DocumentArrowDownIcon className="w-4 h-4" />
@@ -164,7 +146,6 @@ export default function ShareDropdown(props: Props) {
                 </button>
               )}
             </Menu.Item>
-          </Tooltip>
         </Menu.Items>
       </Transition>
     </Menu>

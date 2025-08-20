@@ -45,21 +45,15 @@ export default function Snapshots(props: Props) {
             </div>
           </div>
 
-          <Tooltip
-            title="Snapshots are not available in the open-source version"
-            message="Upgrade to the Briefer cloud's professional tier to use them."
-            className="flex"
-            tooltipClassname="-bottom-1 right-0 translate-y-full translate-x-0 w-64 text-center"
-            position="manual"
-            active
-          >
             <button
-              className="flex items-center gap-x-2 rounded-sm bg-primary-200 px-3 py-1 text-sm hover:bg-primary-300 disabled:cursor-not-allowed disabled:bg-gray-200"
-              disabled
+              className="flex items-center gap-x-2 rounded-sm bg-primary-200 px-3 py-1 text-sm hover:bg-primary-300"
+              onClick={() => {
+                // Aqui você pode implementar a lógica de salvar snapshot
+                console.log('Save snapshot clicked')
+              }}
             >
               Save
             </button>
-          </Tooltip>
         </div>
         <ScrollBar className="overflow-auto">
           <ul role="list" className="flex-1 divide-y divide-solid"></ul>

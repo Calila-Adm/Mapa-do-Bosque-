@@ -380,7 +380,7 @@ export default function Layout({
       <FeaturesDialog
         open={isUpgradeDialogOpen}
         setOpen={setUpgradeDialogOpen}
-        currentPlan="open-source"
+        currentPlan="professional"
       />
 
       {/* Overlay for the collapse button only (always on top) */}
@@ -502,13 +502,6 @@ export default function Layout({
                 Configurations
               </div>
               <ul role="list">
-                <li>
-                  <ConfigurationsMenuButton
-                    text="Upgrade Briefer"
-                    icon={RocketLaunchIcon}
-                    onClick={() => setUpgradeDialogOpen(true)}
-                  />
-                </li>
                 {configs(workspaceId)
                   .filter(showConfigItem)
                   .map((item) => (
